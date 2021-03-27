@@ -2,14 +2,42 @@ body{
     font-family: 'Open Sans' , sans-serif;
     background-color: black;
 }
+@media screen and (max-width: 992px) {
+    body {
+      display: flex;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    body {
+      display: flex;
+    }
+  }
+  
 #container{
     width: 1000px;
-    height: 96vh;
+    height: 100vh;
     background-size: cover;
     background-image: url("./images/unnamed.jpg");
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
     margin: 10px auto;
     box-shadow: 0 4px 8px 0 rgb(41, 69, 88);
 }
+@media screen and (max-width: 992px) {
+    #container {
+      display: flex;
+      
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #container {
+      display: flex;
+      
+    }
+  }
+  
 
 #main{
     width: 320px ;
@@ -22,6 +50,7 @@ body{
     box-shadow: 0 4px 8px 0 white;
     
 }
+
 .head{
     text-align: left;
     height: 50px;
@@ -29,17 +58,18 @@ body{
     font-size: 30px;
     padding-top: 10px;
     color: rgb(95, 93, 93);
-    padding-left: 15px;;
+    padding-left: 10px;;
 }
 .result{
     border: 1px solid transparent;
-    width: 50vh;
+    width: 95%;
     height: 60px;
-    padding-left: 5px;
-    margin-left: 3px;
-    margin-right: 3px;
+    /* padding-left: 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 30px;
     text-align: right;
+    /* padding-right: px; */
 }
 /* #keyboard{
     height: 400px;
@@ -53,6 +83,8 @@ body{
     border-width: 0;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
+
 }
 button:nth-child(1){
 	
@@ -94,4 +126,6 @@ button:focus{
 }
 #name{
     color:  #eaedef;
+    background-color: #eaedef;
+    
 }
